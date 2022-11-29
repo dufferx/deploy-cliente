@@ -20,6 +20,9 @@ import axios from 'axios';
 
 const Landing = () => {
     const navigate = useNavigate();
+    const { logout, user} = useUserContext();   
+    
+    logout();
     
 
 
