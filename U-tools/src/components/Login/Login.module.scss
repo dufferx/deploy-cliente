@@ -1,0 +1,115 @@
+@import "../../variables";
+
+#regist-sect{
+       justify-content: center;
+       //position:fixed;
+       width:100%;
+       height:100%;
+   
+       #atras{
+           position: absolute;
+           width: 70px;
+           height: 70px;
+           left: 430px;
+           top: 94px;
+       }
+   
+    
+   
+      background: linear-gradient(90deg, #09152F -1.72%, #265774 50.2%, #09152F 98.64%); 
+      #regist{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-evenly;
+           
+           
+           width: 486px;
+           height: 786px;
+          
+           background: #12314B;
+           border-radius: 20px;
+   
+           img{
+               margin-top: 1rem;
+               width: 268px;
+               height: 171px;
+           }
+   
+   
+           .inputs{
+               width: 85%;
+               border-radius: 15px;
+               height: 61px;
+               border: none;
+               font-family: $theme-text-font;
+               font-weight: 600;
+                   font-size: 16px;
+                   line-height: 30px;
+               /* color: #949494; */
+      
+               padding-left: 1rem;
+              
+           }
+           button{
+               width: 193px;
+               height: 53.24px;
+               border-radius: 10rem;
+               font-family: $theme-text-font;
+               font-style: normal;
+               font-weight: 600;
+               font-size: 20px;
+               border: none;
+               border-radius: 20px;
+           }
+           
+           button:hover {
+               box-shadow: 0 4px 16px rgb(47, 102, 124);
+               transition: all 0.2s ease;
+           }
+           
+      }
+   }
+
+   @media (max-width:600px){
+    
+    #regist-sect{
+    
+        #regist{
+            position: absolute;
+            top: 50%;
+            height:65%;
+
+            .imglog{
+                max-width: 100%;
+                height: 35%;
+                width: auto;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:491px){
+    
+    #regist-sect{
+    
+        #regist{
+            position: absolute;
+            top: 50%;
+            height:65%;
+            width: 65%;
+            
+            .imglog{
+                max-width: 100%;
+                height: 30%;
+                width: auto;
+            }
+        }
+
+    }
+}

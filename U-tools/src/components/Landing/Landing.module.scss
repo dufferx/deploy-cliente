@@ -1,0 +1,128 @@
+@import "../../variables";
+
+
+.landing-page {
+    height: fit-content;
+    padding-bottom: 25rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#landing1 {
+    flex-direction: row-reverse;
+    padding-top: 10rem;
+}
+
+
+
+#img-calendar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 28rem;
+
+    img {
+        width: 450px;
+        height: 550px;
+    }
+}
+
+#landing-h {
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 28rem;
+    align-content: center;
+
+    h1 {
+        color: #E7E7E7;
+        text-Align: Center bold;
+        font-family: $theme-heading-font;
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 10%;
+        padding: 2rem;
+    }
+
+    h2 {
+        //  width: 90%;
+        color: #E7E7E7;
+        font-family: $theme-text-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.165em;
+    }
+
+    #buttons-div {
+        padding-top: 3rem;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-around;
+        width: 100%;
+
+
+        .botones {
+            //padding: 0.5rem;
+            width: 290px;
+            height: 80px;
+            border-radius: 10rem;
+            font-family: $theme-text-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            //padding: 0.3rem;
+            //  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+
+        }
+
+        #invisible {
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+        }
+
+        .botones:hover {
+            box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+#landing2 {
+
+    img {
+        border-radius: 1.8rem;
+    }
+}
+
+#landing3 {
+
+    img {
+        border-radius: 1.8rem;
+    }
+}
+
+#landing4 {
+
+    img {
+        border-radius: 1.8rem;
+    }
+}
+
+
+

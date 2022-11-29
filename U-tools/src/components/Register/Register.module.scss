@@ -1,0 +1,222 @@
+@import "../../variables";
+
+.regist-sect{
+ 
+       justify-content: center;
+       //position:fixed;
+       width:100%;
+       height:100%;
+   
+       #atras{
+           position: absolute;
+           width: 70px;
+           height: 70px;
+           left: 430px;
+           top: 94px;
+       }
+
+       background: linear-gradient(90deg, #09152F -1.72%, #265774 50.2%, #09152F 98.64%);
+   
+    
+         #regist{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-evenly;
+           
+           
+           width: 486px;
+           height: 786px;
+          
+           background: #12314B;
+           border-radius: 20px;
+   
+           img{
+               margin-top: 1rem;
+               width: 268px;
+               height: 171px;
+           }
+           
+           
+
+           form{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+          
+   
+           input{
+               width: 85%;
+               border-radius: 15px;
+               height: 61px;
+               border: none;
+               font-family: $theme-text-font;
+               font-weight: 600;
+                   font-size: 16px;
+                   line-height: 30px;
+            
+      
+               padding-left: 1rem;
+
+
+               &.error{
+                outline: 2.5px solid crimson;
+               }
+              
+           }
+        }
+
+           
+
+
+           
+           button{
+               width: 193px;
+               height: 53.24px;
+               border-radius: 10rem;
+               font-family: $theme-text-font;
+               font-style: normal;
+               font-weight: 600;
+               font-size: 20px;
+               border: none;
+               border-radius: 20px;
+               cursor: pointer;
+
+               &:disabled{
+                color: #bbb;
+                cursor: not-allowed;
+               }
+           }
+           
+           button:hover:not(:disabled) {
+               box-shadow: 0 4px 16px rgb(47, 102, 124);
+               transition: all 0.2s ease;
+           }
+           
+      }
+   }
+
+@media (max-width:600px){
+    
+    .regist-sect{
+
+      flex-direction: row;
+
+        #regist{
+            position: absolute;
+            top: 50%;
+            height:65%;
+
+            .imglog{
+                max-width: 100%;
+                height: 25%;
+                width: auto;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:491px){
+    
+    .regist-sect{
+    
+        flex-direction: row;
+
+        #regist{
+            position: absolute;
+            top: 50%;
+            height:80%;
+            width: 65%;
+            
+            .imglog{
+                max-width: 100%;
+                height: 20%;
+                width: auto;
+            }
+        }
+
+    }
+}
+
+   /* @import '../../variables';
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    label {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      input,
+      textarea {
+        padding: 0.4rem 0.5rem;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+
+        resize: none;
+
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          outline: 1px solid lighten($theme-accent-color, 20);
+        }
+
+        &.error {
+          outline: 2px solid crimson;
+        }
+      }
+
+      div.chars-left {
+        padding: 0.1rem;
+
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1.25rem;
+
+        font-family: "Space mono", monospace;
+        user-select: none;
+
+        color: gray;
+
+        background: #ffffffaa;
+      }
+
+      div.hint {
+        opacity: 0.8;
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+    }
+  }
+} */

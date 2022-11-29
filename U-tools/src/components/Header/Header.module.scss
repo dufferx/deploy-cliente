@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.Header {
+   background-color: #112E48;
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   position: sticky;
+   top: 0;
+   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+
+
+
+
+   .idlogo {
+       padding-top: 0.5rem;
+       cursor: pointer;
+
+       img {
+           width: 183px;
+           height: 110px;
+       }
+   }
+
+   .nav-links {
+       list-style: none;
+       padding-right: 1.5rem;
+
+
+       li {
+           display: inline-block;
+           padding: 0 3rem;
+
+           a {
+               font-family: $theme-text-font;
+               font-size: 24px;
+               color: white;
+           }
+
+           :hover {
+            text-shadow: 0 4px 16px rgba(49, 138, 172, 1.5);
+            transition: all 0.2s ease;;
+           }
+       }
+
+       .logout{
+        background-color: $theme-primary-color;
+        width: 150px;
+        height: 45px;
+        border-radius: 10rem;
+        font-family: $theme-text-font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        color: white;
+       }
+
+       .logout:hover{
+        background-color: white;
+        color: $theme-primary-color;
+        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+            transition: all 0.2s ease;
+       }
+
+       
+
+   }
+}
