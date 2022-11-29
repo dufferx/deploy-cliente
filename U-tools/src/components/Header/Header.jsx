@@ -63,9 +63,9 @@ const Header = () => {
     </nav>
 
         <div className={isActive ? "mobile-menu": "mobile-menu is-open"}>
-        <a href="#" >Calculadar Nota</a>
-        <a href="#">Calcular CUM</a>
-       <a href="#">LOGOUT</a>
+        <a onClick={redirectHandler2} >Calculadar Nota</a>
+            <a onClick={redirectHandler}>Calcular CUM</a>
+            <a onClick={redirectHandler4} class="is-active">LOGOUT</a>
         </div>
 
     </header>
